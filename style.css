@@ -1,3 +1,4 @@
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +6,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Light pastel background */
+    font-family: 'Merriweather', serif;
+    background-color: #f0f4f8;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #ffcccb; /* Soft coral color for header */
+    background-color: #003366; /* Dark blue background */
     color: white;
 }
 
@@ -31,6 +33,7 @@ header {
 
 .menu li {
     display: inline;
+    margin-left: 15px;
 }
 
 .menu li a {
@@ -38,49 +41,61 @@ header {
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
-    background-color: #ffb6b9; /* Light pink color for the menu button */
+    background-color: #00509e; /* Slightly lighter blue for menu button */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .menu li a:hover {
-    background-color: #fa8072; /* Slightly darker pink on hover */
+    background-color: #006bbf; /* Darker blue on hover */
 }
 
+/* Main Content Styling */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     flex-grow: 1;
     padding: 20px;
+    text-align: center;
 }
 
-.coming-soon-message {
-    margin-bottom: 20px;
-}
-
-.coming-soon-message h1 {
-    font-size: 48px;
-    color: #333;
-}
-
-.coming-soon-message p {
-    font-size: 24px;
+.introduction, .showcase {
+    max-width: 800px;
+    margin: auto;
     color: #555;
 }
 
-.game-image img {
-    max-width: 85%;
-    height: auto;
-    border: 3px solid #87ceeb; /* Sky blue border for the game image */
-    border-radius: 10px; /* Slightly rounded corners */
+.introduction h2, .showcase h3 {
+    color: #333;
+    margin-top: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffcccb;
-    color: #333;
+/* Divider Styling */
+.divider {
+    width: 100%;
+    max-width: 700px;
+    height: 1px;
+    background-color: #cccccc; /* Light gray line */
+    margin: 30px auto; /* Space around the divider */
+}
+
+/* Image Styling */
+.showcase img {
+    width: 80%; /* Ensures all images are the same size */
+    height: auto;
+    max-width: 400px; /* Limits the width for consistency */
+    margin: 20px auto; /* Centers the image */
+    display: block;
+    border: 2px solid #87ceeb;
+    border-radius: 8px;
+}
+
+/* Styling for Lists and Sections */
+.showcase ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.showcase ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
 }
